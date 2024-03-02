@@ -1,3 +1,13 @@
+terraform {
+  cloud {
+    organization = "eamanze-test"
+
+    workspaces {
+      name = "demo-github-actions"
+    }
+  }
+}
+
 provider "aws" {
   region = "eu-west-2"
 }
